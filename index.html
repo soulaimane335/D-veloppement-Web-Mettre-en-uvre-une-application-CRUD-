@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion des Exercices - AJAX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Ajouter un exercice</legend>
+        <form id="form-ajout">
+            <label for="titre">Titre de l'exercice :</label>
+            <input type="text" id="titre" required><br>
+            
+            <label for="auteur">Auteur de l'exercice :</label>
+            <input type="text" id="auteur" required><br>
+            
+            <label for="datepicker">Date création :</label>
+            <input type="text" id="datepicker" required><br>
+            
+            <input type="button" id="btn-envoyer" value="Envoyer">
+        </form>
+    </fieldset>
+
+    <!-- Calque pour l'appel AJAX -->
+    <div id="liste-exercices"></div>
+
+    <!-- Intégration de jQuery via CDN CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
